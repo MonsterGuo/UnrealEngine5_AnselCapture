@@ -1,0 +1,20 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "e:\\ansel50\\plugins\\ansel\\intermediate\\build\\win64\\unrealeditor\\development\\ansel\\module.ansel.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "e:\\ansel50\\intermediate\\build\\win64\\ansel50editor\\development\\engine\\sharedpch.engine.shadowerrors.h.pch",
+        "Includes": [
+            "e:\\ansel50\\plugins\\ansel\\intermediate\\build\\win64\\unrealeditor\\development\\ansel\\definitions.ansel.h",
+            "e:\\ansel50\\plugins\\ansel\\intermediate\\build\\win64\\unrealeditor\\inc\\ansel\\ansel.init.gen.cpp",
+            "e:\\ansel50\\plugins\\ansel\\intermediate\\build\\win64\\unrealeditor\\inc\\ansel\\anselcapture.gen.cpp",
+            "e:\\ansel50\\plugins\\ansel\\source\\ansel\\public\\anselcapture.h",
+            "e:\\ansel50\\plugins\\ansel\\intermediate\\build\\win64\\unrealeditor\\inc\\ansel\\anselcapture.generated.h",
+            "e:\\ansel50\\plugins\\ansel\\intermediate\\build\\win64\\unrealeditor\\inc\\ansel\\anselfunctionlibrary.gen.cpp",
+            "e:\\ansel50\\plugins\\ansel\\source\\ansel\\public\\anselfunctionlibrary.h",
+            "e:\\ansel50\\plugins\\ansel\\intermediate\\build\\win64\\unrealeditor\\inc\\ansel\\anselfunctionlibrary.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
