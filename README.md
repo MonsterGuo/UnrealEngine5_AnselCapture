@@ -1,6 +1,8 @@
 # UnrealEngine5.0_AnselCapture
 UnrealEngine5.0_AnselCapture Final Edition
-
+# 建议使用“修正版”
+对比原版，编写更符合虚幻规范。
+可以将插件放置在任意，虚幻能识别的位置更适合使用。
 # Ansel_Capture
 一个基于 Unreal Engine 4.27 修改的Nvidia_Ansel plugins 可以用于生成360 或者立体360 影片的工具 
 这是基于Unreal Engine 4.27 的Ansel插件修改而来的版本。
