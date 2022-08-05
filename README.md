@@ -11,23 +11,27 @@ UnrealEngine5.0_AnselCapture Final Edition
 目前已经测试了：456.71~551.79版本的Nvidia驱动。
 #### 2.假如你需要更改单帧的保存位置：请安装Nvidia的GeForceExperience组件。
 **没有修改：将默认保存在系统指定的”视频文件夹下方“
-
+#### 3.关于lumen的一些特殊说明
+Lumen这个功能比较特殊，他是一个基于时域的光追并伴随降噪的算法。现今速度并不够快到完全看不到噪点和闪烁，需要画面静置一段时间才能得到干净的画面。
+假若你需要输出带lumen的画面，需要适当的延长r.Photography.SettleFrames的值，这里可以设置成超过10的值，建议是10~20之间。或者说你需要更高品质的可以继续增大这个值。
 （1）点击“设置”
 
 ![Pasted image 20220324120858](https://user-images.githubusercontent.com/39860733/159846088-18804c78-c19a-47ca-8edc-ea44e3d7a3af.png)
-（2）关闭“游戏内覆盖”，这一步是为了确保“Ansel”能正常启动，这里为啥我也不大清楚。反正必须关掉，虚幻内部的Ansel才能启动。
-
-![Pasted image 20220324121037](https://user-images.githubusercontent.com/39860733/159846137-8b6e1ee7-57e3-4cb8-b1bb-c78f52e559b2.png)
-（3）点击“游戏内覆”盖设置
+（2）点击“游戏内覆”盖设置
 
 ![Pasted image 20220324120645](https://user-images.githubusercontent.com/39860733/159846194-877e800a-cc0b-48e6-9712-8b22d08c5ee8.png)
-（4）点击“设置”选项
+（3）点击“设置”选项
 
 ![Pasted image 20220324121245](https://user-images.githubusercontent.com/39860733/159846343-153054d9-3cf0-4304-b42d-8202dafcbe8e.png)
-（5）设置保存路径
+（4）设置保存路径
 
 ![Pasted image 20220324122738](https://user-images.githubusercontent.com/39860733/159846366-b01d8273-55bc-4cd4-9ff7-26e082e122e4.png)
 ![Pasted image 20220324122852](https://user-images.githubusercontent.com/39860733/159846373-489b35b0-f155-4791-80d8-2cbacb7be82b.png)
+（5）关闭“游戏内覆盖”，这一步是为了确保“Ansel”能正常启动，这里为啥我也不大清楚。反正必须关掉，虚幻内部的Ansel才能启动。
+
+![Pasted image 20220324121037](https://user-images.githubusercontent.com/39860733/159846137-8b6e1ee7-57e3-4cb8-b1bb-c78f52e559b2.png)
+
+
 #### 3.下方就是在虚幻4中普通使用的一个情景
 1.先关闭场景的”自动曝光“，这里的值可以根据自己的预设值设定。
 
@@ -65,7 +69,8 @@ ffmpeg.exe -framerate 30 -i F:/Grab/UnrealEngineDemo/Frame_%4d.jpg -c:v libx264 
 6.输出视频实例  
 bilibili：https://www.bilibili.com/video/BV1J34y1b7Cr?spm_id_from=333.788.top_right_bar_window_history.content.click  
 Youtube: https://youtu.be/M65mXhrFh8U   
-7.加速渲染速度可以适当调节控制台变量：r.Photography.SettleFrames 的值 （范围1~10），可以设置成1（最快），  最慢是10.
+7.加速渲染速度可以适当调节控制台变量：r.Photography.SettleFrames 的值 （范围1~10），可以设置成1（最快），最慢是10.   
+ **lumen的情况建议最小值为10，最大值为30。中间去调节这个值，它能最大的静置画面。获得更干净的画面。**
 
 ### 目前已经测试各个帧率下输出情况：包含24fps,25fps,30fps,48fps,50fps,60fps
 ![image](https://user-images.githubusercontent.com/39860733/167581780-efde6191-2e62-440c-95e0-250ccacdfa3b.png)
