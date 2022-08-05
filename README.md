@@ -13,7 +13,7 @@ UnrealEngine5.0_AnselCapture Final Edition
 **没有修改：将默认保存在系统指定的”视频文件夹下方“
 #### 3.关于lumen的一些特殊说明
 Lumen这个功能比较特殊，他是一个基于时域的光追并伴随降噪的算法。现今速度并不够快到完全看不到噪点和闪烁，需要画面静置一段时间才能得到干净的画面。
-假若你需要输出带lumen的画面，需要适当的延长r.Photography.SettleFrames的值，这里可以设置成超过10的值，建议是10~20之间。或者说你需要更高品质的可以继续增大这个值。
+假若你需要输出带lumen的画面，需要适当的延长r.Photography.SettleFrames的值，这里可以设置成超过10的值，建议是10~20之间。或者说你需要更高品质的可以继续增大这个值。  
 （1）点击“设置”
 
 ![Pasted image 20220324120858](https://user-images.githubusercontent.com/39860733/159846088-18804c78-c19a-47ca-8edc-ea44e3d7a3af.png)
