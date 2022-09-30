@@ -3,6 +3,12 @@ UnrealEngine5.0_AnselCapture Final Edition
 # 建议使用“修正版”
 对比原版，编写更符合虚幻规范。
 可以将插件放置在任意，虚幻能识别的位置更适合使用。
+# 关于Ansel部分特效无法开启的问题说明  
+由于Nvidia的Ansel是基于DX11(官方目前没有更新DX12的SDK)，开发所以当使用Ansel的部分特效将无法正常执行并且报错。所以在使用的时候需要适当的取舍。 
+![image](https://user-images.githubusercontent.com/39860733/193227766-a5ab2cf2-0fde-4e36-8eda-40012711b969.png)
+如果你需要使用部分EXR输出图片序列，你需要设置“项目设置——平台——Windows——Targeted RHIs——DX11”
+![image](https://user-images.githubusercontent.com/39860733/193228029-38260b8b-37cf-4fca-b6ba-f1a620171835.png)
+*** 值得注意的是当开启DX11意味着将会丢失一些来在虚幻5的画面上的优势，以及部分新的功能。
 # Ansel_Capture
 一个基于 Unreal Engine 4.27 修改的Nvidia_Ansel plugins 可以用于生成360 或者立体360 影片的工具 
 这是基于Unreal Engine 4.27 的Ansel插件修改而来的版本。
