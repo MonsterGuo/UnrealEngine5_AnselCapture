@@ -655,7 +655,7 @@ bool FNVAnselCameraPhotographyPrivate::UpdateCamera(FMinimalViewInfo& InOutPOV, 
 		}
 
 		if (bAnselCaptureNewlyActive)									
-		{ 
+		{
 			PCMgr->OnPhotographyMultiPartCaptureStart();
 			bGameCameraCutThisFrame = true;
 			bAnselCaptureNewlyActive = false;
@@ -676,6 +676,9 @@ bool FNVAnselCameraPhotographyPrivate::UpdateCamera(FMinimalViewInfo& InOutPOV, 
 		//如果会话想要取消激活的话 
 		if (bAnselSessionWantDeactivate)					
 		{
+			//这里需要禁用
+			bTriggerNextTick = false;
+			
 			bAnselSessionActive = false;
 			bAnselSessionWantDeactivate = false;
 			if (bAutoPostprocess)
