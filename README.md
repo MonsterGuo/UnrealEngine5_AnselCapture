@@ -15,7 +15,7 @@ UnrealEngine5.0_AnselCapture Final Edition
 # 关于Ansel部分特效无法开启的问题说明  
 由于Nvidia的Ansel是基于DX11(官方目前没有更新DX12的SDK)，开发所以当使用Ansel的部分特效将无法正常执行并且报错。所以在使用的时候需要适当的取舍。 
 ![image](https://user-images.githubusercontent.com/39860733/193227766-a5ab2cf2-0fde-4e36-8eda-40012711b969.png)
-如果你需要使用部分EXR输出图片序列，你需要设置“项目设置——平台——Windows——Targeted RHIs——DX11”
+如果你需要使用部分NVIDIA特效，你需要设置“项目设置——平台——Windows——Targeted RHIs——DX11”
 ![image](https://user-images.githubusercontent.com/39860733/193228029-38260b8b-37cf-4fca-b6ba-f1a620171835.png)
 *** 值得注意的是当开启DX11意味着将会丢失一些来在虚幻5的画面上的优势，以及部分新的功能。
 # Ansel_Capture
