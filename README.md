@@ -59,17 +59,27 @@ Lumen这个功能比较特殊，他是一个基于时域的光追并伴随降噪
 （3）打开你的sequnce关卡序列，设置合适的帧率    
 ![image](https://user-images.githubusercontent.com/39860733/167580316-bf242321-ada4-47d5-bd7b-ca8e483b29a5.png)
 （4）打开"项目设置"，在搜索栏输入"frame".设置固定帧率（指定为你输出影片的帧率）  
-![image](https://user-images.githubusercontent.com/39860733/167580779-2a51135e-1207-4cdd-8079-b3058104be27.png)
-#### 蓝图概览
-![image](https://user-images.githubusercontent.com/39860733/167580884-14419853-b443-486b-a134-399938952566.png)
+![image](https://user-images.githubusercontent.com/39860733/167580779-2a51135e-1207-4cdd-8079-b3058104be27.png)  
+（5）在编辑器内以独立游戏的方式运行游戏，或者在项目文件处直接启动游戏  
+1.编辑器内以“独立运行模式”启用  
+![image](https://user-images.githubusercontent.com/39860733/196025988-fd157c85-e93a-4bb0-b889-e4d07e742a47.png)
 
-这个蓝图的大致思路就是  
+2.直接在项目处启动游戏（这种方式更好）  
+![Untitled](https://user-images.githubusercontent.com/39860733/196025909-bec362e7-160e-4675-8d36-977df5284c86.png)
+
+ (5) 按下“数字键1”启动Ansel，然后点击“抓取”开始连续捕获全景。  
+ 建议*  
+ 在显存足够的情况下，最大化窗口来抓取画面将节省很多时间。 
+ 如果点击一次无效，可以再点击一次就能连续捕获了  
+![image](https://user-images.githubusercontent.com/39860733/196026345-156deb81-7637-4402-816d-e97f0ab57c11.png)
+
+### 关于自动捕获蓝图的大致思路  
 （1）在启动那一刻先让游戏的帧率稳定在固定的值，然后将 sequence播放结束的代理挂上去.触发”stop session“事件，自动结束采集。  
 （2）当按下”按键1“时播放”指定的sequnce序列“，然后激活”start session“事件。  
-（3）一切就绪后,点击”拍摄“，将自动开启截图。等待sequence跑完将自动关闭”Ansel“的对话框。  
-
 ![Pasted image 20220324124752](https://user-images.githubusercontent.com/39860733/159846452-6d2341ad-d0a1-4451-bc25-03b85ecd0430.png)
-
+（3）一切就绪后,点击”拍摄“，将自动开启截图。等待sequence跑完将自动关闭”Ansel“的对话框。  
+#### 蓝图概览
+![image](https://user-images.githubusercontent.com/39860733/167580884-14419853-b443-486b-a134-399938952566.png)
 ### 如果需要自定义蓝图，可拷贝编写好的蓝图，然后自定义自己的调用逻辑。
 
 4.找一个批量重名名工具对单帧进行重命名：
