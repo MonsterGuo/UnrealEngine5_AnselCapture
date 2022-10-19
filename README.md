@@ -11,7 +11,7 @@ UnrealEngine5.0_AnselCapture Final Edition
 # 建议使用最新版本
 对比原版，编写更符合虚幻规范。
 可以将插件放置在任意，虚幻能识别的位置更适合使用。
-# 关于Ansel部分特效无法开启的问题说明  
+# 关于Ansel部分特效无法开启的问题说明（5.1版本正常可以跳过不看）  
 由于Nvidia的Ansel是基于DX11(官方目前没有更新DX12的SDK)，开发所以当使用Ansel的部分特效将无法正常执行并且报错。所以在使用的时候需要适当的取舍。 
 ![image](https://user-images.githubusercontent.com/39860733/193227766-a5ab2cf2-0fde-4e36-8eda-40012711b969.png)
 如果你需要使用部分NVIDIA特效，你需要设置“项目设置——平台——Windows——Targeted RHIs——DX11”
