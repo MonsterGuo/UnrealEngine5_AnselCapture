@@ -1,5 +1,11 @@
-# UnrealEngine5.0_AnselCapture
-UnrealEngine5.0_AnselCapture Final Edition
+# UnrealEngine5_AnselCapture
+UnrealEngine5_AnselCapture Final Edition
+### 更新内容 2023/02/04 （Unreal Engine5.1）  
+1. 修复自动曝光不能自适应  
+2. 新增菜单选项用于独立部分效果开关  
+3. 修复部分bug  
+![image](https://user-images.githubusercontent.com/39860733/216736528-93044a4a-c2ff-4960-8af6-c5dce15bb08a.png)
+
 ### 更新内容 2022/09/30
 1. 优化输出效果  
 2. 优化抗锯齿效果  
@@ -94,7 +100,7 @@ ffmpeg.exe -framerate 30 -i F:/Grab/UnrealEngineDemo/Frame_%4d.jpg -c:v libx264 
 bilibili：https://www.bilibili.com/video/BV1J34y1b7Cr?spm_id_from=333.788.top_right_bar_window_history.content.click  
 Youtube: https://youtu.be/M65mXhrFh8U   
 7.加速渲染速度可以适当调节控制台变量：r.Photography.SettleFrames 的值 （范围1~10），可以设置成1（最快），最慢是10.   
- **lumen的情况建议最小值为10，最大值为30。中间去调节这个值，它能最大的静置画面。获得更干净的画面。**
+ **在5.0.3版本下 lumen的情况建议最小值为10，最大值为30。中间去调节这个值，它能最大的静置画面。获得更干净的画面。**
 
 ### 目前已经测试各个帧率下输出情况：包含24fps,25fps,30fps,48fps,50fps,60fps
 ![image](https://user-images.githubusercontent.com/39860733/167581780-efde6191-2e62-440c-95e0-250ccacdfa3b.png)
