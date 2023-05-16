@@ -1,0 +1,26 @@
+{
+	"FileVersion": 3,
+	"Version": 520,
+	"VersionName": "5.20",
+	"FriendlyName": "Nvidia Ansel Capture Plugin",
+	"Description": "Plugin to support Ansel Photography",
+	"Category": "Photography",
+	"CreatedBy": "Epic Games, Inc.",
+	"CreatedByURL": "http://epicgames.com",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EngineVersion": "5.2.0",
+	"CanContainContent": true,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "Ansel",
+			"Type": "Runtime",
+			"LoadingPhase": "PostConfigInit",
+			"PlatformAllowList": [
+				"Win64"
+			]
+		}
+	]
+}
